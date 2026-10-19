@@ -1,13 +1,13 @@
 # Optimization Competition
 
-Make `fft_student` in `student.c` as fast as you can while keeping it correct.
+Make `fft_student` in `code.c` as fast as you can while keeping it correct.
 The fastest correct submission earns extra credit.
 
 ## Files
 
 | File | Edit? | Purpose |
 |---|---|---|
-| `student.c` | **yes, submit this** | Your implementation (starts as a copy of the baseline) |
+| `code.c` | **yes, submit this** | Your implementation (starts as a copy of the baseline) |
 | `fft.h` | no | Function signatures and what the function must compute |
 | `baseline.c` | no | Unoptimized version your speedup is measured against |
 | `harness.c` | no | Correctness test and timer |
@@ -31,7 +31,7 @@ use `./fft_test --seed <number>`.
 
 ## How you are graded
 
-- The grader compiles your `student.c` with `gcc -O0`, the same as `make test`,
+- The grader compiles your `code.c` with `gcc -O0`, the same as `make test`,
   together with its own copy of the harness and a secret seed.
 - Wrong output at any size means no speed score.
 - Your score is the geometric mean of your speedups at N = 64 and N = 100.

@@ -4,7 +4,7 @@ CFLAGS = -O0
 N     ?= 32
 REPS  ?= 5
 
-SRCS = harness.c baseline.c student.c
+SRCS = harness.c baseline.c code.c
 
 # Build and run the correctness check and benchmark (rebuilds every time so N changes apply).
 test:
