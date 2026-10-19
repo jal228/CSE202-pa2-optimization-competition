@@ -1,4 +1,4 @@
-// Your competition entry. This is the only file you submit.
+// Your optimized implementation. This is the only file you submit.
 //
 // Rules (submissions that break them are disqualified):
 //   - Keep the fft_student signature from fft.h. Any helper functions or
@@ -6,8 +6,8 @@
 //   - Results must match the reference to double precision (relative error <= 1e-8).
 //   - Only math, memory (memcpy/memset/malloc/free) and printf functions may be called:
 //     no threads, timers, file I/O, or system calls.
-//   - No inline assembly, SIMD intrinsics, #pragma, or __attribute__((optimize/constructor)).
 //   - Do not keep results between calls; every call gets new input.
+//   - Individual work only: do not discuss your solution, work in pairs, or share code.
 //
 // Test with:  make test        (or: make sizes)
 #include <math.h>
