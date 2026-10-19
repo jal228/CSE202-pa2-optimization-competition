@@ -7,6 +7,7 @@
 //   - Only math, memory (memcpy/memset/malloc/free) and printf functions may be called:
 //     no threads, timers, file I/O, or system calls.
 //   - Do not keep results between calls; every call gets new input.
+//   - No #pragma GCC optimize or __attribute__((optimize)): your code is compiled at -O0.
 //   - Individual work only: do not discuss your solution, work in pairs, or share code.
 //
 // Test with:  make test        (or: make sizes)

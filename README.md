@@ -55,9 +55,8 @@ use `./fft_test --seed <number>`.
 
 - **Competition:** the fastest correct submission in the class gets an extra
   **1 credit on the final grade**, after its code is reviewed by hand. Any
-  optimization is allowed: algorithm changes, lookup tables, SIMD intrinsics, inline
-  assembly, `#pragma`s and compiler attributes, as long as you follow the rules
-  below. If the top results are too close to separate reliably, they're re-run
+  optimization is allowed: algorithm changes, lookup tables, SIMD intrinsics, and
+  inline assembly, as long as you follow the rules below. If the top results are too close to separate reliably, they're re-run
   before a winner is chosen.
 - `make sizes` shows roughly what the grader will measure. The grading machine may
   differ a little, so aim a bit above 4.4× if you want the full 20.
@@ -72,6 +71,9 @@ Breaking any of these rules disqualifies your entry:
   error of 1e-8. `float` will not pass.
 - You may only call math functions, `memcpy`/`memset`/`malloc`/`free`, and
   `printf`. No threads, timers, file I/O, or system calls.
+- Don't change the compiler's optimization level from inside your code: no
+  `#pragma GCC optimize`, `_Pragma("GCC optimize ...")`, or
+  `__attribute__((optimize))`. Your code is compiled at `-O0` like everyone else's.
 - Don't keep results between calls. Every call gets new input, and every result is checked.
 - You may change the algorithm, as long as the output is correct.
 - You should be able to explain all your optimizations. 
